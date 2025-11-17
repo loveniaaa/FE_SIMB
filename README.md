@@ -158,88 +158,13 @@ axios.get(`${process.env.REACT_APP_API_URL}/api/users`);
 
 ---
 
-# 9. Build untuk Production
 
-```bash
-npm run build
-```
-
-Hasil build berada pada folder:
-
-```
-/build
-```
-
-**File ini siap di-deploy ke:**
-
-* Nginx
-* Apache
-* Netlify
-* Vercel
-* Firebase Hosting
-* cPanel
-* VPS (Nginx reverse proxy)
-
----
-
-# 10. Deployment Guide
-
-### 10.1 Deploy ke Netlify
-
-1. Upload folder `/build`
-2. Selesai
-3. Set environment variable jika perlu
-
-### 10.2 Deploy ke Vercel
-
-1. Install CLI:
-
-   ```bash
-   npm i -g vercel
-   ```
-2. Deploy:
-
-   ```bash
-   vercel
-   ```
-
-### 10.3 Deploy ke VPS (Nginx)
-
-Upload hasil build ke:
-
-```
-/var/www/simb-frontend
-```
-
-Lalu konfigurasi Nginx:
-
-```nginx
-server {
-    listen 80;
-    server_name domainAnda.com;
-
-    root /var/www/simb-frontend;
-
-    location / {
-        try_files $uri /index.html;
-    }
-}
-```
-
-Restart:
-
-```bash
-sudo systemctl restart nginx
-```
-
----
-
-# 11. Integrasi ke Backend (BE_SIMB)
+# 9. Integrasi ke Backend (BE_SIMB)
 
 Pastikan Backend sudah berjalan di:
 
 ```
-http://localhost:8080/
+http://localhost:9900/
 ```
 
 Set URL backend di file:
@@ -258,7 +183,7 @@ const API = axios.create({
 
 ---
 
-# 12. Testing Frontend
+# 10. Testing Frontend
 
 Gunakan tools berikut:
 
@@ -274,9 +199,9 @@ npm run test
 
 ---
 
-# 13. Troubleshooting
+# 11. Troubleshooting
 
-### ❗ Error: “npm install failed”
+### Error: “npm install failed”
 
 Coba:
 
@@ -285,26 +210,8 @@ rm -rf node_modules
 npm install
 ```
 
-### ❗ Error: “react-scripts: command not found”
+### Error: “react-scripts: command not found”
 
 ```bash
 npm install react-scripts
 ```
-
-### Halaman blank setelah deploy
-
-Pastikan Nginx pakai:
-
-```
-try_files $uri /index.html;
-```
-
-### CORS Error saat fetch data
-
-Perbaiki di backend:
-
-```java
-@CrossOrigin(origins = "*")
-```
-
----
