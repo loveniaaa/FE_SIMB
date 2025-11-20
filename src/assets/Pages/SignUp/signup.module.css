@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Onest:wght@100..900&display=swap');
+
+.kiri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(180deg, #FFF 0%, #000 100%);
+}
+
+.glassBox {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+  background: linear-gradient(180deg, rgba(163, 163, 163, 0.72) 0%, rgba(0, 0, 0, 0.72) 77.86%);
+  backdrop-filter: blur(10px);
+}
+
+.bgImage {
+  width: 65%;
+  height: auto;
+  background: url(../../img/National-Overseas-Scholarship-image.png) / cover no-repeat;
+}
+
+.textScholarship {
+  font-family: 'Onest', sans-serif;
+  font-weight: 600;
+  font-size: 75px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logoUK {
+  width: 256px;
+  height: 58px;
+}
+
+.TitleKanan {
+  font-size: 25px;
+}
+
+.card {
+  width: 600px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.3); /* Tambahkan transparansi kalau mau efek glass */
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* Biar makin glassy */
+  color: white; /* Teks jadi kelihatan */
+  /* mix-blend-mode: overlay; ❌ ini bikin teks hilang! */
+}
+

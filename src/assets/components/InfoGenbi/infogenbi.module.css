@@ -1,0 +1,193 @@
+.pageContainer {
+    background-color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 10px;
+  }
+  
+  .headerSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+  
+  @media (width<=640px) {
+    .header {
+      padding: 20px;
+    }
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .headerTitle {
+    color: #7e8df2;
+    margin-left: 24px;
+    font-family: Onest, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  
+  @media (width<=640px) {
+    .headerTitle {
+      font-size: 30px;
+    }
+  }
+  
+  .mainContent {
+    padding: 40px 109px;
+  }
+  
+  @media (width<=991px) {
+    .mainContent {
+      padding: 40px 50px;
+    }
+  }
+  
+  @media (width<=640px) {
+    .mainContent {
+      padding: 20px;
+    }
+  }
+  
+  .genbiLogo {
+    width: 144px;
+    height: 144px;
+    
+  }
+  
+  @media (width<=640px) {
+    .genbiLogo {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  
+  .mainTitle {
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 200px;
+    font-family: Onest, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    align-items: center;
+  }
+  
+  @media (width<=991px) {
+    .mainTitle {
+      text-align: center;
+    }
+  }
+  
+  @media (width<=640px) {
+    .mainTitle {
+      font-size: 24px;
+    }
+  }
+  
+  .registerButton {
+    color: #fff;
+    letter-spacing: 1.25px;
+    cursor: pointer;
+    background-color: #384dd7;
+    border: none;
+    border-radius: 7px;
+    padding: 8px 40px;
+    font-family: Onest, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    right: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .registerButton:hover {
+    background-color: #576be8;
+  }
+  
+  @media (width<=991px) {
+    .registerButton {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      position: static;
+    }
+  }
+  
+  @media (width<=640px) {
+    .registerButton {
+      width: 100%;
+      padding: 15px;
+      font-size: 20px;
+    }
+  }
+  
+  .requirementsTitle {
+    color: #000;
+    margin-bottom: 27px;
+    font-family: Onest, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  @media (width<=640px) {
+    .requirementsTitle {
+      font-size: 20px;
+    }
+  }
+  
+  .requirementsList {
+    color: #000;
+    font-family: Onest, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 127%;
+  }
+  
+  @media (width<=640px) {
+    .requirementsList {
+      font-size: 20px;
+    }
+  }
+  
+  .requirementItem {
+    margin-bottom: 20px;
+  }
+  
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.closeButton {
+    margin-top: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+

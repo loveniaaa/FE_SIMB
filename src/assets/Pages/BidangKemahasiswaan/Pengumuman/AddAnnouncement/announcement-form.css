@@ -1,0 +1,24 @@
+.hover-upload {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-upload:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    transform: scale(1.03);
+  }
+  
+  .save-btn {
+    transition: all 0.3s ease;
+  }
+  
+  .save-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+    border-color: #198754;
+  }
+  
